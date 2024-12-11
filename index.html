@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Web Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fab fa-java"></i>
+                <span>JavaDev</span>
+            </div>
+            <ul>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> О нас</a></li>
+                <li><a href="#services"><i class="fas fa-code"></i> Услуги</a></li>
+                <li><a href="#portfolio"><i class="fas fa-project-diagram"></i> Портфолио</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Разработка веб-сайтов на Java</h1>
+                <p>Создаем современные и масштабируемые решения</p>
+                <a href="#contact" class="cta-button">Начать проект</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>О нас</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <i class="fas fa-users"></i>
+                    <h3>Опытная команда</h3>
+                    <p>Профессионалы с многолетним опытом разработки</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Быстрая разработка</h3>
+                    <p>Современные методологии и инструменты</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Качество</h3>
+                    <p>Надежные и масштабируемые решения</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Веб-разработка</h3>
+                    <p>Создание современных веб-приложений</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>API Разработка</h3>
+                    <p>RESTful API и микросервисы</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-database"></i>
+                    <h3>База данных</h3>
+                    <p>Проектирование и оптимизация</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Портфолио</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="src/main/webapp/images/proj0.jpg" alt="Проект 0">
+                    <div class="portfolio-overlay">
+                        <h3>Проект 1</h3>
+                        <p>Веб-приложение для бизнеса</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="src/main/webapp/images/proj1.jpg" alt="Проект 1">
+                    <div class="portfolio-overlay">
+                        <h3>Проект 2</h3>
+                        <p>Система управления данными</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="src/main/webapp/images/proj2.jpg" alt="Проект 2">
+                    <div class="portfolio-overlay">
+                        <h3>Проект 3</h3>
+                        <p>E-commerce платформа</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Свяжитесь с нами</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@javadev.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+375 29 324-11-00</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Москва, Россия</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Свяжитесь с нами</h2>
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваша электронная почта</label>
+                    <input type="email" name="email" id="email" placeholder="Введите вашу почту" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение</label>
+                    <textarea name="message" id="message" placeholder="Введите ваше сообщение" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 JavaDev. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="src/main/webapp/script.js"></script>
+</body>
+</html>
